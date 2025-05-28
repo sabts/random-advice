@@ -27,4 +27,6 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background: #202733;
+  padding: 120px 16px 200px 16px;
 }
