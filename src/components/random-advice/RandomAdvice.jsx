@@ -16,7 +16,7 @@ const RandomAdvice = () => {
            </div>
       )}
       <button onClick={() => getAdvice(setAdvice)} className={styles["button"]}>
-        <img src="public/assets/icon-dice.svg"/>
+        <img src="public/assets/icon-dice.svg" className={styles["button-icon"]}/>
       </button>
       </section>
    );

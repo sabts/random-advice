@@ -13,6 +13,17 @@
   gap: 24px;
 }
 
+.container::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  top: 75%;
+  background-image: url(/assets/pattern-divider-mobile.svg);
+  width: 100%;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
 .advice-number {
   color: #53ffaa;
   font-size: 0.6875rem;
@@ -25,18 +36,6 @@
   font-weight: 800;
   letter-spacing: -0.257px;
 }
-
-.container::before {
-  content: "";
-  position: absolute;
-  left: 7%;
-  top: 75%;
-  background-image: url(/assets/pattern-divider-mobile.svg);
-  width: 100%;
-  height: 16px;
-  background-repeat: no-repeat;
-}
-
 .button {
   position: absolute;
   display: flex;
@@ -50,4 +49,38 @@
   left: 50%;
   transform: translate(-50%, -50%);
   top: 100%;
+}
+
+.button-icon {
+  transition: transform 0.6s ease-in-out;
+  transform-origin: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 540px;
+    height: 332px;
+    border-radius: 15px;
+  }
+
+  .container::before {
+    background-image: url(../../../public/assets/pattern-divider-desktop.svg);
+    width: 100%;
+    height: 16px;
+    background-repeat: no-repeat;
+    left: 9%;
+  }
+  .advice-number {
+    font-size: 0.8125rem;
+  }
+  .advice-text {
+    font-size: 1.75rem;
+  }
+
+  .button:hover {
+    filter: drop-shadow(0px 0px 40px #53ffaa);
+  }
+  .button-icon:hover {
+    transform: rotate(180deg);
+  }
 }
