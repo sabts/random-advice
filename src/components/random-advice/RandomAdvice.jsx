@@ -7,17 +7,19 @@ const RandomAdvice = () => {
     getAdvice(setAdvice);
   }, []);
   return (
-    <>
 
+<section className={styles["container"]}>
       {advice?.slip && (
-           <div className={styles["container"]}>
-           <h2 key={advice.slip.id}>{advice.slip.id}</h2>
-           <span>"{advice.slip.advice}"</span>
+           <div>
+           <h2 key={advice.slip.id} className={styles["advice-number"]}>Advice #{advice.slip.id}</h2>
+           <span className={styles["advice-text"]}>"{advice.slip.advice}"</span>
            </div>
       )}
 
-      <button onClick={() => getAdvice(setAdvice)}>ADVICE!</button>
-  </>
+      <button onClick={() => getAdvice(setAdvice)} className={styles["button"]}>
+        <img src="public/assets/icon-dice.svg"/>
+      </button>
+      </section>
    );
 };
 

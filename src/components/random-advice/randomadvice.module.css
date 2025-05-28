@@ -9,4 +9,34 @@
   border-radius: 10px;
   background: #313a48;
   padding: 24px;
+  position: relative;
+  text-align: center;
+}
+
+.advice-number {
+  color: #53ffaa;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 3.457px;
+}
+.advice-text {
+  color: #cee3e9;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.257px;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #53ffaa;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100%;
 }
