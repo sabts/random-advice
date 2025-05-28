@@ -15,7 +15,6 @@ const RandomAdvice = () => {
            <span className={styles["advice-text"]}>"{advice.slip.advice}"</span>
            </div>
       )}
-
       <button onClick={() => getAdvice(setAdvice)} className={styles["button"]}>
         <img src="public/assets/icon-dice.svg"/>
       </button>
