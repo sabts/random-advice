@@ -1,10 +1,9 @@
-import Button from "./components/button/Button";
+import RandomAdvice from "./components/random-advice/RandomAdvice";
 
 const App = () => {
   return (
     <>
-      <h1>Template React</h1>
-      <Button />
+      <RandomAdvice />
     </>
   );
 };
